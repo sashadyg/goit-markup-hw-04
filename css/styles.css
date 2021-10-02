@@ -67,6 +67,11 @@ p {
   padding-right: 15px;
 }
 
+.header-logo {
+  display: flex;
+  margin-right: 93px;
+}
+
 .logo {
   color: var(--active-text);
   font-family: Raleway;
@@ -74,9 +79,6 @@ p {
   font-size: 26px;
   line-height: 1.1;
   letter-spacing: 0.03em;
-
-  display: flex;
-  margin-right: 93px;
 }
 
 .nav {
@@ -106,6 +108,19 @@ p {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+
+  display: flex;
+  align-items: center;
+}
+
+.icon-mail-item {
+  fill: var(--main-text);
+  margin-right: 10px;
+}
+
+.icon-mail:focus .icon-mail-item,
+.icon-mail:hover .icon-mail-item {
+  fill: var(--active-text);
 }
 
 .nav-contacts {
@@ -131,10 +146,22 @@ p {
 }
 
 .hero {
-  background-color: var(--secondary-background);
+  background: rgba(89, 96, 173, 0.4);
 
   padding-top: 200px;
   padding-bottom: 200px;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .btn {
@@ -146,6 +173,7 @@ p {
   line-height: 1.9;
   border-radius: 4px;
   text-align: center;
+  cursor: pointer;
 
   padding: 10px 32px;
   width: 200px;
@@ -212,6 +240,18 @@ p {
   padding-bottom: 94px;
 }
 
+.feature-btn {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
 .team-title-images {
   display: flex;
 }
@@ -244,6 +284,7 @@ p {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
 }
 
 .team-personality > img {
@@ -252,6 +293,41 @@ p {
 
 .team .team-personality:not(:last-child) {
   margin-right: 30px;
+}
+
+.team-link-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-link {
+  display: flex;
+  justify-content: center;
+}
+
+.team-link-item {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.team-link-item:hover,
+.team-link-item:focus {
+  background: var(--active-text);
+}
+
+.team-link-item:hover .team-link-icon,
+.team-link-item:focus .team-link-icon {
+  fill: var(--white-color);
+}
+
+.team-link-icon {
+  fill: #afb1b8;
 }
 
 .names {
@@ -272,7 +348,7 @@ p {
   letter-spacing: 0.03em;
 
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .team-bg {
@@ -281,11 +357,114 @@ p {
   padding-top: 94px;
 }
 
+.client {
+  padding-bottom: 94px;
+}
+
+.client-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
+}
+
+.client-btn {
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  background-color: var(--white-color);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.client-btn:hover,
+.client-btn:focus {
+  border-color: var(--active-text);
+}
+
+.client-btn:hover .client-logo,
+.client-btn:focus .client-logo {
+  fill: var(--active-text);
+}
+
+.client-logo {
+  fill: #afb1b8;
+}
+
+.invite-title {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+  margin-top: 12px;
+}
+
+.invite-list {
+  display: flex;
+}
+
+.invite-link-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.invite-link {
+  display: flex;
+  justify-content: center;
+}
+
+.invite-link-item {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.invite-link-item:hover,
+.invite-link-item:focus {
+  background: var(--active-text);
+}
+
+.invite-link-item:hover .invite-link-icon,
+.invite-link-item:focus .invite-link-icon {
+  fill: var(--white-color);
+}
+
+.invite-link-icon {
+  fill: var(--white-color);
+}
+
+.footer-container {
+  display: flex;
+}
+
 .current {
   color: var(--active-text);
 }
 
 .footer-address {
+  display: block;
+  max-width: 231px;
+  margin-right: 70px;
+}
+
+.footer-address-list {
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -380,7 +559,7 @@ p {
 }
 
 .footer-logo {
-  display: block;
+  display: inline-block;
   margin-bottom: 20px;
 }
 
