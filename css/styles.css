@@ -137,7 +137,7 @@ p {
 
   padding-top: 24px;
   padding-bottom: 25px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-container {
@@ -249,7 +249,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  cursor: default;
 }
 
 .team-title-images {
@@ -285,6 +285,7 @@ p {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
+  background-color: var(--white-color);
 }
 
 .team-personality > img {
@@ -359,6 +360,7 @@ p {
 
 .client {
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .client-list {
@@ -377,6 +379,7 @@ p {
 }
 
 .client-btn {
+  display: block;
   width: 170px;
   height: 92px;
   padding: 16px 32px;
@@ -408,6 +411,7 @@ p {
   color: var(--white-color);
   margin-bottom: 20px;
   margin-top: 12px;
+  cursor: default;
 }
 
 .invite-list {
@@ -569,6 +573,7 @@ p {
 }
 
 .footer-logo {
+  cursor: default;
   display: inline-block;
   margin-bottom: 20px;
 }
